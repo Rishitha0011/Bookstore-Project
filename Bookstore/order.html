@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Order Confirmation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .order-box {
+            width: 550px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f8f8f8;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .pay-options {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 20px;
+            background: darkgreen;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: green;
+        }
+
+        .success {
+            text-align: center;
+            color: green;
+            font-size: 22px;
+            margin-top: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="order-box">
+
+    <h2 style="text-align:center;">Order Confirmation</h2>
+
+    <form>
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Address:</label>
+        <input type="text" placeholder="Enter delivery address">
+
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Enter phone number">
+
+        <label>Payment Method:</label>
+
+        <div class="pay-options">
+            <input type="radio" name="pay" checked> Cash on Delivery <br>
+            <input type="radio" name="pay"> UPI Payment <br>
+            <input type="radio" name="pay"> Credit / Debit Card
+        </div>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+    <div class="success">
+        Your order has been placed successfully! 🎉
+    </div>
+
+</div>
+
+</body>
+</html>
